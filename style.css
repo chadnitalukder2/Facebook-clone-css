@@ -137,8 +137,7 @@ nav {
 
 }
 
-.imp-links a,
-.shortcut-links a {
+.imp-links a ,.shortcut-links a {
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -358,4 +357,19 @@ nav {
 }
 .user-profile small{
     font-size: 12px;
+}
+
+.post-input-container{
+padding-left: 55px;
+padding-top: 20px;
+
+
+}
+
+.post-input-container textarea{
+    width: 100%;
+border: 0;
+outline:0;
+border-bottom: 1px solid #ccc;
+background: transparent;
 }
