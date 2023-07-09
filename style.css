@@ -4,10 +4,22 @@
     font-family: 'poppins', sans-serif;
     box-sizing: border-box;
 }
+:root{
+--body-color: #efefef;
+--nav-color:#1876f2;
+--bg-color:#fff;
+
+}
+.dark-theme{
+    --body-color:#0a0a0a;
+    --nav-color:#000;
+    --bg-color:#000;
+}
 
 body {
 
-    background: #efefef;
+    background: var(--body-color);
+    transition: background 0.3s;
 
 }
 
@@ -15,10 +27,11 @@ nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #1876f2;
+    background: var(--nav-color);
     padding: 5px 5%;
     position: sticky;
     top: 0;
+    z-index: 100;
 
 }
 
@@ -28,8 +41,7 @@ nav {
 
 }
 
-.nav-left,
-.nav-right {
+.nav-left,.nav-right {
     display: flex;
     align-items: center;
 
@@ -111,7 +123,7 @@ nav {
     flex-basis: 25%;
     position: sticky;
     top: 70px;
-    align-self: self-start;
+    align-self: flex-start;
 
 
 
@@ -123,17 +135,19 @@ nav {
     flex-basis: 25%;
     position: sticky;
     top: 70px;
-    align-self: self-start;
-    background: #fff;
+    align-self: flex-start;
+    background: var(--bg-color);
     padding: 20px;
     border-radius: 4px;
     color: #626262;
+    
 
 }
 
 .main-content {
 
     flex-basis: 47%;
+    text-align: center;
 
 }
 
@@ -148,7 +162,7 @@ nav {
 
 .imp-links a img {
     width: 25px;
-    margin-right: 25px;
+    margin-right: 1cqw;
 }
 
 .imp-links a a:last-child {
@@ -157,7 +171,7 @@ nav {
 }
 
 .imp-links {
-    border-bottom: 1px solid grey;
+    border-bottom: 1px solid #ccc;
 }
 
 .shortcut-links a img {
@@ -227,7 +241,7 @@ nav {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: #1876f2;
+    background: var(--bg-color);
     color: #fff;
     font-size: 10px;
     padding: 4px 0;
@@ -335,7 +349,7 @@ nav {
 }
 .write-post-container{
     width: 100%;
-    background: #fff;
+    background: var(--bg-color);
     border-radius: 6px;
     padding: 20px;
     color: #626262;
@@ -371,7 +385,7 @@ padding-top: 20px;
 border: 0;
 outline:0;
 border-bottom: 1px solid #ccc;
-background: transparent;
+background: var(--bg-color);
 resize:none ;
 }
 
@@ -396,7 +410,7 @@ resize:none ;
 
 .post-container{
     width: 100%;
-    background: #fff;
+    background:var(--bg-color);
     border-radius: 6px;
     padding: 20px;
     color: #626262;
@@ -457,7 +471,7 @@ color: #9a9a9a;
 }
 
 .load-more-btn{
-display: block;
+
 margin: auto;
 cursor: pointer;
 padding:5px 10px ;
@@ -478,12 +492,17 @@ border-radius: 4px;
     width: 51%;
     max-width: 300px;
     
-    background: #fff;
+    background:var(--bg-color);
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
     border-radius: 4px;
     overflow: hidden;
     top: 108%;
     right: 5%;
+    max-height: 0;
+    transition: max-height 0.3s;
+}
+.settings-menu-height{
+    max-height: 450px;
 }
 .user-profile a{
     font-size: 12px;
@@ -517,8 +536,29 @@ flex: 1;
 align-items: center;
 justify-content: space-between;
 text-decoration: none;
-color: ;
+color: #626262;
 
-
-
+}
+#dark-btn{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: #0a0a0a;
+    width: 45px;
+    border-radius: 15px;
+    padding: 2px 3px;
+    cursor: pointer;
+    display: flex;
+    transition: padding-left 0.5s, background 0.5s ;
+}
+#dark-btn span{
+    width: 18px;
+    height: 18px;
+    background: white;
+    border-radius: 50%;
+    display: inline-block;
+}
+#dark-btn.dark-btn-on{
+    padding-left: 23px;
+    background:#ccc;
 }
