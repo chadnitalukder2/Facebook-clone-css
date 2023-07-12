@@ -230,41 +230,84 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
-.title-box a{
+
+.title-box a {
     text-decoration: none;
     color: #1876f2;
     font-size: 14px;
 }
-.photo-box{
+
+.photo-box {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     margin-top: 15px;
 }
-.photo-box div img{
+
+.photo-box div img {
     width: 100%;
     cursor: pointer;
 }
-.pd-intro p{
+
+.pd-intro p {
     font-size: 14px;
 
 }
-.friends-box{
+
+.friends-box {
     display: grid;
     grid-template-columns: repeat(3, auto);
     grid-gap: 10px;
     margin-top: 15px;
 }
-.friends-box div img{
+
+.friends-box div img {
     width: 100%;
     cursor: pointer;
     padding-bottom: 20px;
 }
-.friends-box div{
+
+.friends-box div {
     position: relative;
 }
-.friends-box p{
+
+.friends-box p {
     position: absolute;
     bottom: 0;
     left: 0;
+}
+
+/*----------media query for Profile page------*/
+
+@media (max-width:900px) {
+    .profile-container {
+        padding: 20px 5%;
+    }
+
+    .profile-details {
+        flex-wrap: wrap;
+    }
+
+    .pd-right {
+        text-align: left;
+        margin-top: 15px;
+    }
+
+    .pd-right button {
+        margin-left: 0;
+        margin-right: 10px;
+    }
+
+    .pd-row div h3 {
+        font-size: 15px;
+    }
+
+    .profile-info {
+        flex-wrap: wrap;
+    }
+
+    .info-col,
+    .post-col {
+        flex-basis: 100%;
+    }
 }
