@@ -285,6 +285,7 @@ nav {
     display: flex;
     justify-content: space-between;
     margin-bottom: 20px;
+    overflow: auto;
 
 
 }
@@ -323,7 +324,7 @@ nav {
 }
 
 .story1 {
-    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url(images/status-1.png);
+    background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.5)), url(img/post6.jpg);
 
 }
 
@@ -673,6 +674,7 @@ nav {
 
     .story-gallery {
         gap: 2px;
+        max-width: 359px;
     }
 
 }
