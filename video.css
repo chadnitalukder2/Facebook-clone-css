@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: #fff
+}
+.video-right{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+    .video-right .user, .down,.search {
+        display: block;
+        padding-left: 6px;
+        font-size: 20px;
+        background: #ccc;
+        margin-right: 15px;
+        border-radius: 50%;
+        width: 30px;
+        height: 30px;
+        padding-top: 2px;
+}
+.menu-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #fff;
+    margin: 0;
+    padding: 20px;
+
+}
+.menu-box h4{
+    font-size: 15px;
+    margin-right: 20px;
+    color: black;
+}
+.menu-box i{
+    font-size: 15px;
+    margin: 8px;
+    color: black;
+}
+.menu-box a{
+    text-decoration: none;
+    
+}
+.menu-box a:hover{
+    background:#ccc;
+    border-radius: 20px;
+}
+hr {
+    border: 0;
+    height: 1px;
+    background: #ccc;
+    
+}
+
+.video{
+    background: #fff;
+    padding: 20px;
+    display: flex;
+
+}
+.user-pro-vedio img{
+border-radius: 50%;
+height: 50px;
+width: 50px;
+
+}
+.user-pro-vedio {
+    display: flex;
+    align-items: center;
+}
+
+.user-pro-vedio img {
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.user-pro-vedio p{
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: #626262;
+
+}
+.usera-pro-vedio a{
+    font-size: 20px;
+    text-decoration: none;
+    
+}

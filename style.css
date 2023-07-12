@@ -378,7 +378,7 @@ nav {
 
 .user-profile p {
     margin-bottom: -5px;
-    font-weight: 500px;
+    font-weight: 500;
     color: #626262;
 
 }
@@ -676,5 +676,17 @@ nav {
         gap: 2px;
         max-width: 359px;
     }
+    
+
+.user-profile p{
+    font-size: 12px;
+}
+
+
+.setting-menu-inner{
+    padding: 12px;
+}
+
+
 
 }
