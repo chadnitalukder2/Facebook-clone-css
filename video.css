@@ -12,27 +12,28 @@
 }
 .vd-left{
     position:sticky;
-    flex-basis: 35%;
+    flex-basis: 25%;
     background: #fff
 }
 .watch {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding-bottom: 12px;
 }
 .watch h2{
     padding: 10px 20px;
 }
  .watch div i{
     display: block;
-    padding-left: 5px;
+    padding-left: 6px;
     font-size: 20px;
     background: #ccc;
     margin-right: 15px;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    padding-top: 5px;
+    width: 32px;
+    height: 32px;
+    padding-top: 6px;
 
 }
 .vd-right{ 
@@ -40,27 +41,61 @@
     padding: 0;
 }
 
-
-
 .menu-box{
-    
     background: #fff;
     margin: 0;
     padding: 20px;
-
 }
-.menu-box h4{
-    font-size: 15px;
-    margin-right: 20px;
-    text-decoration: none;
+.for, .live, .reels, .shows, .explore, .save{
+    display: flex;
+    align-items: center;
+    padding: 10px;
 }
+.for div, .live div, .reels div, .shows div, .explore div, .save div {
+    font-size: 20px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background: #ccc;
+    padding-left: 6px;
+    padding-top: 5px;
+}
+.for h4, .live h4, .reels h4, .shows h4, .explore h4, .save h4{
+    padding-left: 10px;
+}
+.save:hover, .live:hover, .explore:hover, .reels:hover, .shows:hover, .for:hover{
+    background: #ccc;
+    width: 300px;
+    height: 50px;
+    border-radius: 40px;
 
-
-.menu-box a{
-    text-decoration: none;
+    }
     
+
+    
+
+
+
+.search{
+    display: flex;
+    background:#ccc;
+    width: 300px;
+    height: 30px;
+    border-radius: 20px;
+    margin-left: 20px;
+    padding: 0 15px;
 }
-.vd-right{
-    position: sticky;
-    padding: 10px 0;
+
+
+.search input{
+    width: 100%;
+    background: transparent;
+    outline: none;
+    border: 0;
+    margin-left: 10px;
+}
+.search img{
+    width: 18px;
+    height: 18px;
+    margin-top: 6px;
 }
