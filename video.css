@@ -6,14 +6,16 @@
 .main{
     display: flex;
     justify-content: space-between;
-    padding: 10px 0 ;
-    
  
 }
 .vd-left{
     position:sticky;
-    flex-basis: 25%;
-    background: #fff
+    flex-basis: 20%;
+    background: #fff;
+    height: ;
+    margin: 0 30px;
+    
+
 }
 .watch {
     display: flex;
@@ -37,21 +39,44 @@
 
 }
 .vd-right{ 
-    flex-basis: 60%;
-    padding: 0;
+    position: relative;
+    flex-basis: 50%;
+    padding-top: 10px;
+    padding-right: 20px;
+    height: 100vh;
+    margin-right:40px;
+    border-radius: 10px;
+    
 }
 
 .menu-box{
     background: #fff;
     margin: 0;
-    padding: 20px;
+    padding: 10px;
 }
-.for, .live, .reels, .shows, .explore, .save{
+.active{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #ccc;
+    border-radius: 10px;
+}
+.active div{
+    font-size: 20px;
+    height: 32px;
+    width: 32px;
+    border-radius: 50%;
+    background:blue;
+    padding-left: 5px;
+    padding-top: 5px;
+    color: #fff;
+}
+.test{
     display: flex;
     align-items: center;
     padding: 10px;
 }
-.for div, .live div, .reels div, .shows div, .explore div, .save div {
+.test div{
     font-size: 20px;
     height: 32px;
     width: 32px;
@@ -60,32 +85,22 @@
     padding-left: 6px;
     padding-top: 5px;
 }
-.for h4, .live h4, .reels h4, .shows h4, .explore h4, .save h4{
+.test h4, .active h4{
     padding-left: 10px;
 }
-.save:hover, .live:hover, .explore:hover, .reels:hover, .shows:hover, .for:hover{
+.test:hover{
     background: #ccc;
-    width: 300px;
-    height: 50px;
-    border-radius: 40px;
-
+    border-radius: 10px;
     }
-    
-
-    
-
-
-
 .search{
     display: flex;
     background:#ccc;
-    width: 300px;
-    height: 30px;
+    width: 310px;
+    height: 35px;
     border-radius: 20px;
-    margin-left: 20px;
-    padding: 0 15px;
+    margin: 15px;
+    padding: 0 10px;
 }
-
 
 .search input{
     width: 100%;
@@ -98,4 +113,39 @@
     width: 18px;
     height: 18px;
     margin-top: 6px;
+}
+
+/*----------vd-left-------------*/
+.post-content{
+    display: flex;
+    margin: 10px;
+}
+.user-dp{
+    display: flex;
+    align-items: center;
+
+}
+.user-dp img{
+    width: 45px;
+    border-radius: 50%;
+    margin-right: 10px
+}
+.user-dp a{
+    margin-bottom: 5px;
+    font-weight: 500;
+    color: blue;
+    text-decoration: none;
+}
+.user-dp span{
+    font-size: 13px;
+    color: #9a9a9a;
+}
+.post-container p{
+    padding-top: 10px;
+
+}
+.post-container video{
+    width: 800px;
+    height: 500px;
+    padding-bottom: 20px;
 }
